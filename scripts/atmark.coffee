@@ -3,4 +3,5 @@ module.exports = (robot) ->
 		msg.send msg.random [
 			"プロデューサーさん！Slackですよ！Slack!"
 			"漢字で書くと 天海春香です！"
+			"のヮの"
 		]
