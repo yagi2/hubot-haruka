@@ -259,5 +259,5 @@ module.exports = (robot) ->
 			"http://24.media.tumblr.com/9537732e57da9e04ef1002b110377cad/tumblr_n10oovRyPu1scr8d9o10_500.gif"
 		]
 
-	robot.respond /ぷちます help/i, (msg) ->
+	robot.respond /ぷち help/i, (msg) ->
 		msg.send "> はるかさん，ゆきぽ，ちひゃー，やよ，いお，まこちー，みうらさん，こあみ，こまみ，あふぅ，ちびき，たかにゃ，ちっちゃん，ぴよぴよ"
