@@ -24,3 +24,14 @@ module.exports = (robot) ->
 			"キタキタヾ(ﾟωﾟ*)ﾉ"
 			"ｷﾀﾖｷﾀﾖヽ(ﾟ∀ﾟ=ﾟ∀ﾟ)ﾉｷﾁｬｯﾀﾖ-!!!!!!"
 		]
+
+	robot.hear /疲れた/, (msg) ->
+		robot.brain.data.count = 0 unless robot.brain.data.count
+		robot.brain.data.count += 1
+		robot.brain.save
+		if robot.brain.data.count < 3 then msg.send "プロデューサーさん ちょっと休憩したらどうですか？" else msg.send  "プロデューサーさん！ 休憩してください！お菓子も作ってきましたから！ ほら！はやく！"
+
+	robot.hear /元気/, (msg) ->
+		robot.brain.data.count = 0
+		robot.brain.save
+		msg.send "それはよかったです！ 疲れたらいつでも言ってくださいね！ お菓子ならありますから！"
