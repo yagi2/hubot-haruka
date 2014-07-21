@@ -9,6 +9,7 @@ module.exports = (robot) ->
 		msg.send msg.random [
 			"おいかつや！"
 			"かっちゃん♡"
+			"かつや♡"
 		]
 
 	robot.hear /kita-/i, (msg) ->
