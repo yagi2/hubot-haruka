@@ -5,6 +5,12 @@ module.exports = (robot) ->
 			"えむらくんひとのはなしききましょ？"
 		]
 
+	robot.hear /oky/i, (msg) ->
+		msg.send msg.random [
+			"おいかつや！"
+			"かっちゃん♡"
+		]
+
 	robot.hear /kita-/i, (msg) ->
 		msg.send msg.random [
 			"ｷﾀ━━━(ﾟ∀ﾟ).━━━!!!"
