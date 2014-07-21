@@ -5,6 +5,5 @@
 	"tasks.coffee",
 	"heroku-status.coffee",
 	"google.coffee",
-	"goodbad.coffee",
 	"chess.coffee"
 ]
