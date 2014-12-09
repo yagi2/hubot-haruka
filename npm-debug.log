@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.29
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/yagi2/Repos/haruka',
+6 verbose install   [ 'hubot', 'hubot-scripts', 'hubot-slack', 'tumblrbot', 'chess' ] ]
+7 info preinstall hosted-hubot@2.7.1
+8 warn package.json clark@0.0.6 No repository field.
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping hubot-slack@^2.1.0 /Users/yagi2/Repos/haruka
+11 verbose already installed skipping hubot@>= 2.6.0 < 3.0.0 /Users/yagi2/Repos/haruka
+12 verbose already installed skipping hubot-scripts@>= 2.5.0 < 3.0.0 /Users/yagi2/Repos/haruka
+13 verbose already installed skipping tumblrbot@0.1.0 /Users/yagi2/Repos/haruka
+14 verbose already installed skipping chess@0.2.1 /Users/yagi2/Repos/haruka
+15 silly resolved []
+16 info build /Users/yagi2/Repos/haruka
+17 verbose linkStuff [ false, false, false, '/Users/yagi2/Repos' ]
+18 info linkStuff hosted-hubot@2.7.1
+19 verbose linkBins hosted-hubot@2.7.1
+20 verbose linkMans hosted-hubot@2.7.1
+21 verbose rebuildBundles hosted-hubot@2.7.1
+22 verbose rebuildBundles [ '.bin',
+22 verbose rebuildBundles   'chess',
+22 verbose rebuildBundles   'clark',
+22 verbose rebuildBundles   'htmlparser',
+22 verbose rebuildBundles   'hubot',
+22 verbose rebuildBundles   'hubot-scripts',
+22 verbose rebuildBundles   'hubot-slack',
+22 verbose rebuildBundles   'soupselect',
+22 verbose rebuildBundles   'tumblrbot',
+22 verbose rebuildBundles   'underscore',
+22 verbose rebuildBundles   'underscore.string' ]
+23 verbose rebuild bundle /Users/yagi2/Repos/haruka/node_modules/clark
+24 info build /Users/yagi2/Repos/haruka/node_modules/clark
+25 info preinstall clark@0.0.6
+26 verbose linkStuff [ false, false, false, '/Users/yagi2/Repos/haruka/node_modules' ]
+27 info linkStuff clark@0.0.6
+28 verbose linkBins clark@0.0.6
+29 verbose link bins [ { clark: './bin/clark.js' },
+29 verbose link bins   '/Users/yagi2/Repos/haruka/node_modules/.bin',
+29 verbose link bins   false ]
+30 verbose linkMans clark@0.0.6
+31 verbose rebuildBundles clark@0.0.6
+32 verbose gentlyRm vacuuming /Users/yagi2/Repos/haruka/node_modules/.bin/clark
+33 silly gentlyRm purging /Users/yagi2/Repos/haruka/node_modules/.bin/clark
+34 error Error: EACCES, unlink '/Users/yagi2/Repos/haruka/node_modules/.bin/clark'
+34 error  { [Error: EACCES, unlink '/Users/yagi2/Repos/haruka/node_modules/.bin/clark']
+34 error   errno: 3,
+34 error   code: 'EACCES',
+34 error   path: '/Users/yagi2/Repos/haruka/node_modules/.bin/clark' }
+35 error Please try running this command again as root/Administrator.
+36 error System Darwin 14.0.0
+37 error command "node" "/usr/local/bin/npm" "install"
+38 error cwd /Users/yagi2/Repos/haruka
+39 error node -v v0.10.29
+40 error npm -v 2.0.0-alpha-5
+41 error path /Users/yagi2/Repos/haruka/node_modules/.bin/clark
+42 error code EACCES
+43 error errno 3
+44 error stack Error: EACCES, unlink '/Users/yagi2/Repos/haruka/node_modules/.bin/clark'
+45 verbose exit [ 3, true ]
